@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout-padrao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="relatorio-progresso.css">
+    <title>Document</title>
+</head>
+<header><img src="img/SENAI logo.png" alt="">
+<ul><li style="border-left:none ;"><a href="">Atividades</a></li>
+    <li><a href="">Turmas</a></li>
+    <li><a href="">Trocar de Perfil</a></li>
+    <li><a href="">Início</a></li>
+    <li style="border-right:none ;"><a href="" >Voltar</a></li>
+</ul>
+</header>
+
+
+<body>
+    <!-- Da pra reutilizar essa parte-->
+    <div id="container-titulo">
+        <div id="usuario"><p>Professor</p >
+            <svg width="254" height="80" viewBox="0 0 254 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M120.2 45.7619V46.2619H120.7H124.1V58.095C115.728 56.1498 109.5 48.8076 109.5 40.0476C109.5 29.8205 118.001 21.5 128.5 21.5C138.999 21.5 147.5 29.8205 147.5 40.0476C147.5 49.48 140.289 57.2707 130.95 58.4415V46.2619H136.3H136.8V45.7619V40.0476V39.5476H136.3H130.95V36.2381C130.95 35.4776 131.593 34.8333 132.4 34.8333H136.3H136.8V34.3333V28.619V28.119H136.3H131.425C127.396 28.119 124.1 31.3224 124.1 35.2857V39.5476H120.7H120.2V40.0476V45.7619Z" fill="#4E4E4E" stroke="#6C6C6C"/>
+                <path d="M189.319 44.2526L179.818 55.1414H175.785L187.571 41.6307L187.84 41.3232L187.592 40.9988L175.01 24.5025H184.798L192.269 34.4109L192.64 34.9027L193.045 34.4387L201.721 24.5H205.748L194.776 37.0729L194.509 37.3788L194.753 37.7028L207.91 55.1414H198.387L190.093 44.2779L189.722 43.7912L189.319 44.2526ZM199.214 52.7326L199.364 52.9293H199.611H202.579H203.583L202.978 52.1282L183.826 26.7438L183.676 26.5449H183.427H180.244H179.234L179.847 27.3482L199.214 52.7326Z" fill="#4E4E4E" stroke="#6C6C6C"/>
+                
+                </svg>
+                
+        </div>
+        <div id="titulo">
+            <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.6667 12.7499H30.4584L22.6667 4.95825V12.7499ZM9.91675 2.83325H24.0834L32.5834 11.3333V25.4999C32.5834 26.2514 32.2849 26.972 31.7535 27.5034C31.2222 28.0347 30.5015 28.3333 29.7501 28.3333H9.91675C9.1653 28.3333 8.44463 28.0347 7.91328 27.5034C7.38193 26.972 7.08341 26.2514 7.08341 25.4999V5.66659C7.08341 4.91514 7.38193 4.19447 7.91328 3.66312C8.44463 3.13176 9.1653 2.83325 9.91675 2.83325ZM4.25008 8.49992V31.1666H29.7501V33.9999H4.25008C3.49863 33.9999 2.77797 33.7014 2.24661 33.1701C1.71526 32.6387 1.41675 31.918 1.41675 31.1666V8.49992H4.25008Z" fill="#6C6C6C"/>
+            </svg>
+            Controle de Notas</div>
+    </div>
+    <div id="container-principal">
+        <h1>Relatórios de Progresso</h1>
+        <div id="box-principal">
+            <div id="container-selecao">
+                
+                <button id="selecao" onclick="abrirOpcao()">Selecione
+                    <svg width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_34_188)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2305 20.0971L11.0755 9.24561L13.7879 6.45734L23.5488 15.9527L33.0441 6.19174L35.8324 8.90414L24.9808 20.0592C24.6211 20.4289 24.1293 20.6405 23.6135 20.6477C23.0978 20.6548 22.6003 20.4567 22.2305 20.0971Z" fill="#6C6C6C"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_34_188">
+                    <rect width="23.3431" height="46.6862" fill="white" transform="translate(46.6819) rotate(89.2098)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </button>
+                    <button class="opcao"></button>
+                    <button class="opcao"></button>
+                    <button class="opcao"></button>
+                    <button class="opcao"></button>
+                    <button class="opcao"></button>
+
+            </div>
+            <div id="container-relatorio">
+                <div id="relatorio"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<footer>
+<div id="container-footer">
+    <ul>
+        <li>Endereço: Rua Oratório, 215 - Mooca - São Paulo/SP</li>
+        <li>CEP: 03117-000</li>
+        <li>Telefone: (11) 2076-3200</li>
+        <li>E-mail: portalsenai@sp.senai.br</li>
+    </ul>
+    <img src="img/SENAI logo.png" alt="">
+</div>
+
+</footer>
+<script src="relatorio-progresso.js"></script>
+</html>

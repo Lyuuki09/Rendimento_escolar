@@ -1,0 +1,262 @@
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+}
+body{
+    background-image: url(img/predio1_cut.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+body,html{
+    margin:0 auto;
+    height: 100vh;
+}
+#container-principal{
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 4vh;
+}
+#container-texto{
+    width: 30%;
+    height: 50%;
+    
+    font-family: "PT Sans", sans-serif;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 3px;
+    color: #FF2F2F;
+    line-height: 90px;
+}
+#container-texto h1{
+    line-height: 1.1;
+}
+#container-texto h2{
+    font-size: 40px;
+    margin-left: 0 ;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    bottom: 5%;
+    left: 4%;
+}
+#box-entrada{
+    margin-top: 5%;
+    width: 40%;
+    height: 90%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 8px 12px -6px black;
+    box-shadow:  inset 1px 1px 10px rgba(0, 0, 0, 0.274);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+#container-titulo{
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #E4E4E4;
+}
+#container-titulo svg{
+position: relative;
+
+}
+#logo-senai{
+    object-fit: contain;
+    width: 45%;
+ 
+}
+#logo-get{
+    object-fit: contain;
+    width: 30%;
+}
+#container-usuario{
+    width: 90%;
+    height: 50%;
+    
+}
+#container-bemVindo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#container-bemVindo p {
+    font-family: "Alata", sans-serif;
+    color: #ADADAD;
+    text-align: center;
+    font-size: 18px;
+
+}
+#container-usuario h1{
+    all: unset;
+font-family: "Alata", sans-serif;
+font-size: 20px;
+text-align: center;
+position: relative;
+
+color: #4E4E4E;
+text-decoration: none;
+}
+#container-info{
+    width: 100%;
+    height: 80%;
+    
+}
+#container-entrar{
+    width: 100%;
+    height: 20%;
+    border-bottom: 3px solid #4E4E4E;
+    display: flex;
+    align-items: center;
+    color: #ADADAD;
+    font-family: "Alata", sans-serif;
+    
+}
+
+
+#container-entrar input::placeholder{
+color:#ADADAD;
+}
+
+#container-entrar input{
+    appearance: none;      
+    outline: none;    
+    color: #ADADAD;
+    font-family: "Alata", sans-serif;
+    margin: 0;
+    font-size:20px;
+    border: none;
+    
+}
+#container-entrar form{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+#container-termo{
+    width: 100%;
+    height: 30%;
+    color: #4E4E4E;
+    font-family: "Alata", sans-serif;
+    
+    position: relative;
+    left: 1%;
+}
+
+#container-termo form{
+
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#4E4E4E;
+    font-size: 15px;
+    
+}
+input[type="checkbox"] {
+    border: 2px solid #4E4E4E;        
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    appearance: none;      
+    outline: none;        
+  }
+input[type="checkbox"]:checked{
+    background-image: url(img/checkbox.png);
+    background-position: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#container-button{
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+#container-button p{
+    color: #ADADAD;
+    font-family: "Alata", sans-serif;
+}
+#container-button button{
+    background-color: #FF2F2F;
+    border-radius: 10px;
+    border: none;
+    font-family: "Alata", sans-serif;
+    width: 30%;
+    height: 65%;
+    color: white;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+button a{
+text-decoration: none;
+color: white;
+}
+#container-button p a{
+    color:#ADADAD;
+    text-decoration: none;
+    transition: 200ms;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+   
+
+#entrar:hover{
+    background-color: #df2222;
+    transition: 200ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#entrar:not(:hover){
+    background-color:  #FF2F2F;;
+    transition: 200ms;
+    transform: scale(1);
+}
+
+
+#fundo2,#fundo3{
+position: absolute;
+left: 0px;
+bottom: -96px;
+}
+#fundo3{
+    left: 80px;
+    z-index: -1;
+}
+#fundo2{
+    z-index: 1;
+}

@@ -1,0 +1,70 @@
+#container{
+    background-color: red;
+    width: 800px;
+    height: 900px;
+    position: absolute; /* Faz com que a div se posicione em relação ao elemento pai */
+    top: 50%; /* Move para 50% da altura do elemento pai */
+    left: 50%; /* Move para 50% da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar completamente */
+}
+#titulo{
+    background-color: blue;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#titulo-principal{
+    width: 80%;
+    height: 10%;
+    background-color: green;
+}
+.titulo{
+    width: 80%;
+    height: 10%;
+    background-color: green;
+    
+}
+.titulo {
+    visibility: hidden;             /* Inicialmente invisível */
+    opacity: 0;                     /* Opacidade inicial */
+    transform: translateY(-20px);   /* Inicialmente fora da tela (acima) */
+    transition: 0.5s ease; /* Transição suave para posição e opacidade */
+    margin: 10px 0;
+}
+
+/* Torna visível quando a classe 'visible' é adicionada */
+.titulo.visible {
+    visibility: visible;            /* Torna visível */
+    opacity: 1;                     /* Opacidade total */
+    transform: translateY(0);       /* Move para a posição original */
+}
+
+
+.titulo:nth-child(1) {
+    transition-delay: 0.2s;  
+}
+
+.titulo:nth-child(2) {
+    transition-delay: 0.4s; 
+}
+
+.titulo:nth-child(3) {
+    transition-delay: 0.6s;  
+}
+
+.titulo:nth-child(4) {
+    transition-delay: 0.8s;  
+}
+.titulo:nth-child(5) {
+    transition-delay: 1s; 
+}
+.titulo:nth-child(6) {
+    transition-delay: 1.2s;  
+}
+
+
+
+

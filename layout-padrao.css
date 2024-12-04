@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-image: url(img/predio1_cut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+header{
+    overflow: hidden;
+    width: 100%;
+    height: 10vh;
+   background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 10px #6C6C6C;
+    border-bottom: 1px solid #6c6c6c8e;
+   
+    ul{
+        display: inline-block;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        
+        li{
+            border-left: 1px solid#6C6C6C;
+            border-right: 1px solid #6C6C6C;
+            padding-left: 5%;
+            padding-right:5% ;
+            list-style-type:none;
+            overflow: visible;
+            transition: 200ms;
+            &:hover{
+                border-radius: 5px;
+                background-color: rgba(255, 0, 0, 0.863);
+                
+                
+               
+                a{
+                    border: none;
+                    color: white;
+                    font-size: 25px;
+                }
+                
+            }
+            a{
+                text-wrap: nowrap;
+                text-decoration: none;
+                color: #6C6C6C;
+                font-family: "Alata", sans-serif;
+                font-size: 20px;
+                transition: 200ms;
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+
+            
+        }  
+    }
+}
+
+
+
+header img{
+    object-fit: contain;
+    height: 80%;
+    position: relative;
+    left: 4%;
+   
+}
+footer{
+    width: 100%;
+    height: calc(15vh + 70px);
+    border-bottom:10px solid #DDDDDD ;
+    background-color: #DDDDDD;
+    display: flex;
+    align-items: center;
+}
+#container-footer{
+    background-color:white;
+    width: 100%;
+    height: 70%;
+    box-shadow: 0px 2px 10px #6c6c6c8e;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    img{
+        object-fit: contain;
+        height: 70%;
+        margin-left: 5%;
+        
+    }
+    ul{
+        border-right: 2px solid #ADADAD;
+        padding-right: 5%;
+        li{
+            list-style-type:none;
+            font-family: "Alata", sans-serif;
+            color: #6C6C6C;
+            text-align: center;
+        }
+    }
+}
